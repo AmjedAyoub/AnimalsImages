@@ -12,3 +12,19 @@ button {
     margin: 5px;
     min-width: 120px;
 }
+
+#first {
+    background-color: rgba(95, 240, 191, 0.801);
+}
+
+#second {
+    background-color: rgba(170, 29, 65, 0.788);
+}
+
+#third {
+    background-color: rgba(132, 148, 241, 0.801);
+}
+
+#fi {
+    height: -webkit-fill-available;
+}

@@ -23,8 +23,15 @@ $(document).on("click", ".btnAnimal", function() {
 
     animal = $(this).val();
     $("#imagesArea").empty();
-    var query = "https://api.giphy.com/v1/gifs/search?api_key=Boi88Wtkqy6j61XKYNFfl5SbSbL1Hs2c&q=" + animal + "&limit=10&offset=0&lang=en";
+
+    // var query = "https://api.giphy.com/v1/gifs/search?api_key=Boi88Wtkqy6j61XKYNFfl5SbSbL1Hs2c&q=" + animal + "&limit=10&offset=0&lang=en";
+    // curl - H "Authorization: 563492ad6f917000010000010c1c0adf3ab645c8abdfcdc1caa179df";
+    var query = "https://api.pexels.com/v1/search?query=people";
+    // api_key=563492ad6f917000010000010c1c0adf3ab645c8abdfcdc1caa179df";
     $.ajax({
+        headers: {
+            'Authorization': '563492ad6f917000010000010c1c0adf3ab645c8abdfcdc1caa179d'
+        },
         url: query,
         method: "GET"
     }).then(function(params) {
@@ -57,14 +64,14 @@ $("#addAnimal").on("click", function() {
 
     var user = $("#userAnimal").val().trim();
 
-    if (user !== "") {
+    if (user !== "" && myAnimals.indexOf(user) === -1) {
         myAnimals.push(user);
         displayAnimal();
-
-        // var bttn = $("<button>")
-        // bttn.attr("class", "btnAnimal");
-        // bttn.attr("value", user);
-        // bttn.text(user);
-        // $("#buttonArea").append(bttn);
     }
+    // var bttn = $("<button>")
+    // bttn.attr("class", "btnAnimal");
+    // bttn.attr("value", user);
+    // bttn.text(user);
+    // $("#buttonArea").append(bttn);
+
 })
