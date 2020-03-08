@@ -17,6 +17,10 @@ button {
     background-color: rgba(95, 240, 191, 0.801);
 }
 
+#add{
+    margin-top: 25px;
+}
+
 #second {
     background-color: rgba(170, 29, 65, 0.788);
 }
