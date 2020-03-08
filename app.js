@@ -3,6 +3,8 @@ var myAnimals = ["dog", "cat", "hamester", "horse", "rabbit", "bird", "racoon", 
 var animal;
 var count=0;
 
+$("#msgTitle").text("Click on a button!");
+
 
 function displayAnimal() {
 
@@ -57,6 +59,7 @@ function displayAnimal() {
             btn.text(myAnimals[i]);
             $("#buttonArea").append(btn);
         }
+
         
     }
 
@@ -83,6 +86,7 @@ $(document).on("click", ".btnImage", function() {
             img.attr("data-animate", params.data[i].images.preview_gif.url);
             $("#imagesArea").append(img);
             console.log(params);
+            $("#msgTitle").text("Click on an image to make it move!");
         }
     })
 })
