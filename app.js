@@ -1,4 +1,4 @@
-var myAnimals = ["dog", "cat", "hamester", "horse", "rabbit", "bird", "racoon", "squirrel", "bear", "dear", "cow", "sheep", "lion"]
+var myAnimals = ["Dogs", "Cats", "Nature", "People", "Cars", "Birds", "Ocean", "USA", "Ships", "LOL", "Opss"]
 
 var animal;
 var count=0;
