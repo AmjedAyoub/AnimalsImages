@@ -3,9 +3,9 @@
 } */
 
 img {
-    width: 200px;
-    height: 150px;
-    margin: 10px;
+    width: 250px;
+    height: 200px;
+    margin: 12px;
 }
 
 button {
@@ -13,9 +13,13 @@ button {
     min-width: 120px;
 }
 
-/* #first {
-    background-color: rgba(95, 240, 191, 0.801);
-} */
+#imagesArea {
+    text-align: center;
+}
+
+.wrapper{
+    max-width: 99%;
+}
 
 #add{
     margin-top: 25px;

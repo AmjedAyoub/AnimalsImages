@@ -72,7 +72,7 @@ $(document).on("click", ".btnImage", function() {
     animal = $(this).val();
     $("#imagesArea").empty();
 
-    var query = "https://api.giphy.com/v1/gifs/search?api_key=Boi88Wtkqy6j61XKYNFfl5SbSbL1Hs2c&q=" + animal + "&limit=10&offset=0&lang=en";
+    var query = "https://api.giphy.com/v1/gifs/search?api_key=Boi88Wtkqy6j61XKYNFfl5SbSbL1Hs2c&q=" + animal + "&limit=100&offset=0&lang=en";
     $.ajax({
         url: query,
         method: "GET"
