@@ -1,6 +1,6 @@
-body {
+/* body {
     margin: 10px;
-}
+} */
 
 img {
     width: 200px;
@@ -13,20 +13,20 @@ button {
     min-width: 120px;
 }
 
-#first {
+/* #first {
     background-color: rgba(95, 240, 191, 0.801);
-}
+} */
 
 #add{
     margin-top: 25px;
 }
 
 #second {
-    background-color: rgba(170, 29, 65, 0.788);
+    background-color: rgba(132, 148, 241, 0.247);
 }
 
 #third {
-    background-color: rgba(132, 148, 241, 0.801);
+    background-color: rgba(132, 148, 241, 0.247);
 }
 
 #fi {
