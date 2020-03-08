@@ -1,6 +1,7 @@
 var myAnimals = ["dog", "cat", "hamester", "horse", "rabbit", "bird", "racoon", "squirrel", "bear", "dear", "cow", "sheep", "lion"]
 
 var animal;
+var count=0;
 
 
 function displayAnimal() {
@@ -8,18 +9,62 @@ function displayAnimal() {
     $("#buttonArea").empty();
 
     for (let i = 0; i < myAnimals.length; i++) {
-        var btn = $("<button>")
-        btn.attr("class", "btnAnimal");
-        btn.attr("value", myAnimals[i]);
-        btn.text(myAnimals[i]);
-        $("#buttonArea").append(btn);
+        if (count === 0) {
+            count++;
+            var btn = $("<button>")
+            btn.attr("class", "btn btn-outline-primary btnImage");
+            btn.attr("value", myAnimals[i]);
+            btn.text(myAnimals[i]);
+            $("#buttonArea").append(btn);
+        }
+        else if (count === 1) {
+            count++;
+            var btn = $("<button>")
+            btn.attr("class", "btn btn-outline-secondary btnImage");
+            btn.attr("value", myAnimals[i]);
+            btn.text(myAnimals[i]);
+            $("#buttonArea").append(btn);
+        }
+        else if (count === 2) {
+            count++;
+            var btn = $("<button>")
+            btn.attr("class", "btn btn-outline-success btnImage");
+            btn.attr("value", myAnimals[i]);
+            btn.text(myAnimals[i]);
+            $("#buttonArea").append(btn);
+        }
+        else if (count === 3) {
+            count++;
+            var btn = $("<button>")
+            btn.attr("class", "btn btn-outline-danger btnImage");
+            btn.attr("value", myAnimals[i]);
+            btn.text(myAnimals[i]);
+            $("#buttonArea").append(btn);
+        }
+        else if (count === 4) {
+            count++;
+            var btn = $("<button>")
+            btn.attr("class", "btn btn-outline-warning btnImage");
+            btn.attr("value", myAnimals[i]);
+            btn.text(myAnimals[i]);
+            $("#buttonArea").append(btn);
+        }
+        else if (count === 5) {
+            count = 0;
+            var btn = $("<button>")
+            btn.attr("class", "btn btn-outline-info btnImage");
+            btn.attr("value", myAnimals[i]);
+            btn.text(myAnimals[i]);
+            $("#buttonArea").append(btn);
+        }
+        
     }
 
 }
 
 displayAnimal();
 
-$(document).on("click", ".btnAnimal", function() {
+$(document).on("click", ".btnImage", function() {
 
     animal = $(this).val();
     $("#imagesArea").empty();
@@ -63,7 +108,7 @@ $("#addAnimal").on("click", function() {
         displayAnimal();
     }
     // var bttn = $("<button>")
-    // bttn.attr("class", "btnAnimal");
+    // bttn.attr("class", "btnImage");
     // bttn.attr("value", user);
     // bttn.text(user);
     // $("#buttonArea").append(bttn);
